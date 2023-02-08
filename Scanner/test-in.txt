@@ -1,0 +1,1 @@
+var x : array; begin x:=5; y:=20.15; while(x>=0) do x -=1; (* end of program*) end

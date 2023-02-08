@@ -1,0 +1,7 @@
+all: tester
+
+tester: tester.cpp Scanner.cpp
+	g++ tester.cpp Scanner.cpp -o tester
+
+clean:
+	rm -f tester
