@@ -5,11 +5,14 @@ Tester.cpp	// contains the main method
 
 
 
-************************* 2nd method *************************************
+************************* 1st method *************************************
 
 to compile the program you can use the makefile file :
 simply run 'make' from the command line in the directory 
 where the makefile is located. 
+Then enter from the test input file called test-in.txt, containing at least 20 and no more than 50 
+tokens, to see output produced by the program in response to the 
+test input. 
 To clean up the directory, run make clean.
 
 ************************* 2nd method *************************************
