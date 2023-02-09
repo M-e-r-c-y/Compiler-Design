@@ -143,7 +143,7 @@ TokenLabel Scanner::nexttoken()
         char c = input[currentIndex];
         if (is_letter(c)) {
             while (currentIndex < input.length() && (is_letter(input[currentIndex]) || is_digit(input[currentIndex]))) {
-                word += input[currentIndex];
+                 word += (char) tolower(input[currentIndex]);
                 currentIndex++;
             } 
         } else if (is_SpecialChar(c)){
