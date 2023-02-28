@@ -1,0 +1,11 @@
+PROGRAM test;
+
+BEGIN
+    alpha := 10+5; 
+    beta  := 20+alpha;
+    if not(alpha=0) then
+       begin
+       alpha := 0;
+       beta := (alpha) 
+       end
+END
