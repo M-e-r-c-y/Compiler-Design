@@ -514,8 +514,11 @@ void Parser::outputSymbolTableToFile(std::string fileName) {
         infile.close(); 
         ofstream outfile(fileName, ios::app);
 	if (outfile.is_open()) {
+
+	    outfile << "Symbols in the Table-Symbol : " << endl ;
+
     	    for (auto const& entry : symbolTable) {
- 		outfile << "Symbols in the Table-Symbol : " << endl ;
+ 		
         	outfile << "name: " << entry.first << " type: " << entry.second << endl;
     	    }
             outfile.close();
@@ -530,8 +533,9 @@ void Parser::outputSymbolTableToFile(std::string fileName) {
         ofstream outfile(fileName); 
         
         if (outfile.is_open()) {
+	    outfile << "Symbols in the Table-Symbol : " << endl ;
 	    for (auto const& entry : symbolTable) {
-		outfile << "Symbols in the Table-Symbol : " << endl ;
+		
         	outfile << "name: " << entry.first << " type: " << entry.second << endl;
     	    }
 	    outfile.close();
