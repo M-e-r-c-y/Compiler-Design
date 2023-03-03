@@ -17,8 +17,15 @@ int main()
 
     if (infile.is_open())
     {
-        while (getline(infile, input)) {
-            file_contents += input + "\n";
+        while (getline(infile, input, '\r')) {
+            file_contents += input;
+	    if (infile.peek() == '\n') {
+        	// Consume the '\n' character
+        	infile.get();
+
+        	// Append the '\n' character to the file_contents string
+        	file_contents += '\n';
+    	    }
         }
         infile.close();
         
